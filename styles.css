@@ -1,0 +1,117 @@
+body {
+      margin: 0;
+      background-color: #101124;
+      font-family: UniversalisADFStd;
+      text-align: center;
+      font-size: 14px;
+      color: white;
+}
+
+@font-face {
+font-family: 'UniversalisADFStd';
+src: url('UniversalisADFStd-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+video {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
+.responsive { 
+  object-fit: contain; 
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #101124;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 16px 30px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: UniversalisADFStd;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+* {box-sizing: border-box}
+
+.container {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 50%;
+  vertical-align: middle;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
